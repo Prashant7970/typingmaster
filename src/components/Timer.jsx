@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 function fixtime(time) {
   return time < 10 ? `0${time}` : time;
 }
@@ -13,7 +13,9 @@ const formatTime = (time) => {
 
 export default function Timer(props) {
     const timestart=props.start
+    const{count,cpm,setcpm}=props
   const [timer, settimer] = React.useState(300);
+  const [min,setmin]=useState(0)
   const time = React.useRef(null);
   React.useEffect(() => {
     return () => {
@@ -24,6 +26,7 @@ export default function Timer(props) {
 if(timestart){
     start()
 }
+
   function start() {
     if (time.current !== null) {
       return;
@@ -35,11 +38,18 @@ if(timestart){
           stop(time.current);
           return 0;
         }
+        
+        
+        
         return prev - 1;
       });
      
+     
     }, 1000);
+   
   }
+ 
+  
   function stop(id) {
     clearInterval(time.current);
     time.current = null;
@@ -48,10 +58,30 @@ if(timestart){
     stop();
     settimer(300);
   }
+useEffect(()=>{
+    setmin(timer==300?0:((300-timer)/60))
+    setcpm(min==0?0:(count/min).toFixed(2))
+    
+    
+    
+},[timer])
+
+if(timer===0){
+    return (
+        <div>
+             <h1>Characters: {count}</h1>
+             <h1>Time: 300 sec</h1>
+             <h1>CPM: {cpm}</h1>
+             <button>Reset</button>
+        </div>
+
+    );
+}else{
   return (
     <div >
       <h1>Timer: {formatTime(timer)}</h1>
       
     </div>
   );
+}
 }

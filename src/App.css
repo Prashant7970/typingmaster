@@ -20,7 +20,7 @@ font-size: 18px;
 }
 .testarea{
   background-image: url(https://media.istockphoto.com/id/1363745804/photo/erp-document-management-concept-businessman-working-with-laptop-computer-with-icons-on.jpg?s=612x612&w=0&k=20&c=DLDuY7VtZaDTzyGRXb6bPBGBsTuf3lsBQN0-G1QASak=);
-  background-size: contain;
+  background-size: cover;
   background-color: white;
   width: 90%;
   margin: 5% auto;
@@ -30,10 +30,11 @@ font-size: 18px;
 }
 .testarea>p{
   text-align: center;
-  color: darkblue;
+  color:rgb(17, 238, 50);
+ 
 }
 .correct{
-  color: green;
+  color: rgb(17, 238, 50);
 }
 .incorrect{
   color:red;

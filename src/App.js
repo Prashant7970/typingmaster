@@ -1,5 +1,5 @@
 
-import React, { useRef, useState } from 'react';
+import React, {  useRef, useState } from 'react';
 import './App.css';
 import Timer from './components/Timer';
 const getwords=()=>`rom prom eprom eeprom ram sita hero ass doc rat mat fat ok bye hye what why who`.split(" ").sort(()=>Math.random()>0.5?1:-1)
@@ -53,18 +53,26 @@ function App() {
       settext(value)
     }
   }
+
+
+ 
   return (
     <div className="App">
       <h1>Typing_Champions</h1>
       <div className="testarea">
         <nav>
-          <li>  count: {count}</li>
+          <li>  Character: {count}</li>
           <li>CPM: {cpm}</li>
-          <li>Mistakes: {mistake}</li>
+          <li>Accuracy: {(((word.current.length-mistake)/word.current.length)*100).toFixed(2)}%</li>
         
         </nav>
         <p>
-        <Timer start={timer}/>
+        <Timer start={timer}
+        count={count}
+        cpm={cpm}
+        setcpm={setcpm}
+        
+        />
         </p>
        
 
@@ -76,7 +84,7 @@ function App() {
            text={word}
            active={index===activewordindex}
            correct={correctwordarray[index]}
-           mistakecount={setmistake}
+         
            
            
            />
