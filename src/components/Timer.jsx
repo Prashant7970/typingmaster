@@ -69,10 +69,10 @@ useEffect(()=>{
 if(timer===0){
     return (
         <div>
-             <h1>Characters: {count}</h1>
-             <h1>Time: 300 sec</h1>
-             <h1>CPM: {cpm}</h1>
-             <button>Reset</button>
+             <p>Characters: {count}</p>
+             <p>Time: 300 sec</p>
+             <p>CPM: {cpm}</p>
+             <button onClick={()=>window.location.reload()}>Reset</button>
         </div>
 
     );
