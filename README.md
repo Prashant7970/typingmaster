@@ -4,12 +4,12 @@ Basically its like a game where friends can challenge each other to learn with f
 #Deployed link  <br/>
 https://typo-champ.vercel.app/
 
-#Tech stacks
--ReactJs
--Redux
--Redux-thunk
--React-router-dom
--Css
+<h2>Tech stacks</h2>
+<li>ReactJs</li>
+<li>Redux</li>
+<li>Redux-thunk</li>
+<li>React-router-dom</li>
+<li>Css</li>
 
 
 #login page <br/>
