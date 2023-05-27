@@ -4,6 +4,14 @@ Basically its like a game where friends can challenge each other to learn with f
 #Deployed link  <br/>
 https://typo-champ.vercel.app/
 
+#Tech stacks
+-ReactJs
+-Redux
+-Redux-thunk
+-React-router-dom
+-Css
+
+
 #login page <br/>
 here user can login with their name and email for typing test.
 multiple users can login and see their accuracy rate on the dashboard page.
