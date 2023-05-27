@@ -8,8 +8,7 @@ https://typo-champ.vercel.app/
 here user can login with their name and email for typing test.
 multiple users can login and see their accuracy rate on the dashboard page.
 
-<img src="https://github.com/Prashant7970/typingmaster/assets/95179001/d810e39d-540b-40b4-8584-a02aff1a715c
-" alt="img"/>
+<img src="https://github.com/Prashant7970/typingmaster/assets/95179001/d810e39d-540b-40b4-8584-a02aff1a715c" alt="img"/>
 
 
 #Test page <br/>
