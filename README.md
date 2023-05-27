@@ -16,9 +16,9 @@ Here user can type characters and words by watching left side of the window and 
 users have 5 min to complete the test.
 users can also watch their char count ,character per minutes and accuracy rate at the top.
 
-<img src="" alt="img"/>
+<img src="https://github.com/Prashant7970/typingmaster/assets/95179001/23a12313-d77d-41ae-9c6a-1c6df1b0670d" alt="img"/>
 
 
 #dashboard  <br/>
 Here multiple users can see their performance and futher enhance it by more and more practice.
-<img src="" alt="img"/>
+<img src="https://github.com/Prashant7970/typingmaster/assets/95179001/48b06ad5-202d-4f50-b616-7cff2c19fc1a" alt="img"/>
