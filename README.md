@@ -1,5 +1,5 @@
 # A typing test app which helps to enhance your typing speed.
-Basically its like a game where friends can challenge each other to learn with fun..
+Basically its like a game where friends can challenge each other to learn with fun.
 
 #Deployed link  <br/>
 https://typo-champ.vercel.app/
